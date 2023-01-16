@@ -1,0 +1,194 @@
+/* GLOBAL SETTINGS */
+* {
+  margin:0 ;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+/* **************************************************** */
+
+/* TOP NAVIGATION */
+
+
+body {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  /* background-color:rgb(211, 244, 250); */
+  margin:0;
+}
+.logo {
+  float:left; 
+  padding:0 30px; 
+  margin-top: 25px;
+  color:white;
+}
+
+.nav {
+  display: inline-block;
+  position:relative;
+  margin-left: 0%;
+  margin-top: 0;
+  height: 80px; 
+  width:100%;
+  background-color:#42b0fa; 
+}
+
+.nav ul {
+  /* position: absolute;
+  /* display: inline-block; */
+  /* width: 500px;
+  height:23px;
+  padding: 0;
+  margin-right: 10px; */
+  /* border: 2px solid black; */
+  float:right;
+  margin-top: 40px;
+  padding: 0;
+  /* margin:0p; */
+  /* margin-top: 5px; */
+  /* line-height: 0; */
+
+}
+.nav li {
+  /* display: block; */
+/* width: auto; */
+  position: relative;
+  margin-right: 10x;
+  padding: 10px ;
+  /* margin-top:50px; */
+  /* margin: 0; */
+  /* float: right; */
+
+  /* margin-left: 100px; */
+display: inline-block;
+}
+
+li:hover {
+  background-color: rgb(11, 8, 243);
+  /* border: 2px solid whte; */
+  }
+
+
+.nav a {
+  padding: 0px;
+  margin: 0px;
+color: white;
+/* width:20px; */
+line-height: auto;
+display: inline-block;
+
+/* margin: ; */
+/* font-size: large; */
+}
+/* TOP NOVIGATION END ---------------------------------------------------------------------------------------*/
+/* nav yellow */
+/* .nav_yellow {
+  display: inline-block;
+  position: relative;
+  height: 10px;
+  background-color: yellow;
+  width: 10%;
+  top: 0;
+} */
+/* LOGIN FORM START */
+.login-form {
+  width: 300px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top:5%;
+  height: 350px;
+}
+
+ H2 {
+  margin-bottom: 50PX;
+  text-align: center;
+}
+h4 {
+  padding: 5px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.form-group input {
+  width: 80%;
+  margin-top: 0px;
+  padding: 10px 00px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  background-color: #00bfff;
+  color: white;
+  padding: 12px ;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin-top: 60px;
+  width:100%;
+}
+  /* ------------------------------------------------------------------------------------------------------- */
+  /* price plan */
+  .pricing-plan {
+    width: 350px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 1%;
+    text-align: center;
+    margin:auto;
+    margin-top: 5%;
+
+  }
+  
+  .plan-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .plan-price {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .plan-features {
+      /* list-style: none;  */
+      margin: 0;
+      padding: 0;  
+  }
+  
+  .plan-features li {
+    margin-bottom: 10px;
+  }
+  
+  .plan-button {
+    background-color: #00bfff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  /* nav bottom */
+
+  .navbottom {
+    position: relative;
+    /* display: block; */
+    height: 100px;
+    background-color: rgb(158, 158, 158);
+    margin-top: 20%;
+    text-align:center;
+  }
