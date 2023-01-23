@@ -10,7 +10,6 @@
 
 /* TOP NAVIGATION */
 
-
 body {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   /* background-color:rgb(61, 79, 240); */
@@ -34,40 +33,69 @@ body {
 }
 
 .nav ul {
-  /* position: absolute;
-  /* display: inline-block; */
-  /* width: 500px;
-  height:23px;
-  padding: 0;
-  margin-right: 10px; */
-  /* border: 2px solid black; */
   float:right;
   margin-top: 40px;
   padding: 0;
-  /* margin:0p; */
-  /* margin-top: 5px; */
-  /* line-height: 0; */
-
 }
 .nav li {
-  /* display: block; */
-/* width: auto; */
   position: relative;
   margin-right: 10x;
   padding: 10px ;
-  /* margin-top:50px; */
-  /* margin: 0; */
-  /* float: right; */
+   display: inline-block;
+}
+.waterbgs {
+  position: absolute;
+  /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYFfmhK_uq4cJ9HPsfPXLz2WKzc4k5lv0LTA&usqp=CAU); */
+  margin-top:9px;
+  width: 1100px;
+  margin-left: 330px;
+  height: 100px;
+  background-position:center;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  border-radius: 20px;
+}
 
-  /* margin-left: 100px; */
-display: inline-block;
+.menuhead {
+font-weight: bold;
+font-size: large;
+margin:10px;
+background-color: #00bfff;
+color: rgb(95, 93, 93);
+}
+.sidenav {
+  width: fit-content;
+}
+
+.sidenav ul{
+  position: absolute;
+  height: 100%;
+  background-color: #42b6fa;
+  margin:10px;
+  margin-left: 0;
+}
+
+.sidenav li {
+  /* margin: 10px; */
+  margin-left: 15PX;
+  margin-right: 10px;
+  padding:5px;
+  color: white;
+  cursor: pointer;
 }
 
 li:hover {
   background-color: rgb(11, 8, 243);
+  border-radius: 15px;
   /* border: 2px solid whte; */
   }
 
+ .sidebar,li:hover {
+    background-color: white;
+    border-radius: 15px;
+    /* border: 2px solid whte; */
+    }
+  
 
 .nav a {
   padding: 0px;
@@ -93,13 +121,14 @@ display: inline-block;
 }
 /* LOGIN FORM START */
 .login-form {
+  position: relative;
   width: 300px;
-  background-color: #f4f4f4;
+  background-color: #a0c4ec;
   padding: 20px;
   border-radius: 10px;
   margin: auto;
-  margin-top:5%;
-  height: 470px;
+  /* margin-top:5%; */
+  height: 47x;
 }
 
  H2 {
@@ -112,13 +141,13 @@ h4 {
 }
 
 .form-group {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .form-group label {
   display: block;
   font-size: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 2px;
 }
 
 .form-group input {
@@ -138,8 +167,9 @@ button[type="submit"] {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: bold;
-  margin-top: 25px;
+  margin-top: 5px;
   width:100%;
+  cursor: pointer;
 }
   /* ------------------------------------------------------------------------------------------------------- */
   /* price plan */
