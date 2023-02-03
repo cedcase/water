@@ -1,104 +1,48 @@
-<!-- /*
-| -----------------------------------------------------
-| PRODUCT NAME: 	Modern POS - Point of Sale with Stock Management System
-| AUTHOR:     ITSOLUTION24.COM
-| EMAIL:      cedcase@yahoo.com
-| COPYRIGHT:    RESERVED BY ITSOLUTION24.COM
-| WEBSITE:      http://itsolution24.com
-| -----------------------------------------------------
-*/ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" href="css/favicon2.ico">
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-  <title>WMS</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/js.js"></script>
+    <title>Document</title>
 </head>
-<body>
-  <div class="nav_yellow">
-  </div>
-  
-  <div class="nav"> 
-
-    <h2 class="logo">WATER MANAGEMENT SYSTEM<i class="fas fa-list"></i></h2>
-      <ul>
-        <li><a href="home.html"><i class="fas fa-house"></i>Home</a></li>
-          <li><a href="#"><i class="fas fa-link"></i>About</a></li>
-          <li><a href="prices.html">Prices</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Logout</a></li>
-      </ul>
-  </div>
-  <!-- Side Nav Bar  -->
-  <div class="sidenav">
-    
-      <ul>
-        <div class="menuhead">COMPANY<i class="fas fa-house"></i></div>
-        <li><a href="companysettings.html">Company Settings</a></li>
-        <li>Vendor Maintenance</li>
-        <li>Billing  Cycle</li>
-        <li>Account Settings</li>
-        <div class="menuhead">CUSTOMER</div>
-        <li>View Customer Account</li>
-        <li>Pay Bill</li>
-        <li>Viw Billing History</li>
-        <li>Update Account Information</li>
-        <div class="menuhead">SERVICES</div>
-        <li>Request Disconnection/Reconnection</li>
-        <li>Update Account Information/li>
-        <li>Report a leak</li>
-        <li>Contact Customer Service</li>
-        <div class="menuhead">BILLING</div>
-        <li>Meter Reading</li>
-        <li>Payments</li>
-        <li>Credits</li>
-        <li></li>
-        <div class="menuhead">REPORTS</div>
-        <li>Statements</li>
-        <li>Bills History</li>
-        <li>Billing</li>
-        <li>Imports/Exports Customers</li>
-        <li></li>
-      </ul>
-  </div>
-  <!-- <img src="images/waterbg.jpg" alt="" class="waterbg"> -->
-  <div class="LogInform1">
-   <div class="circle"></div>   
-   <h2 class="h1" ></h2>
-   <form class="login-form">
-    <h2>Login</h2>
-    <div class="form-group">
-      <label for="username">Username:</label>
-      <input type="text" id="username" name="username">
-    </div>
-    <div class="form-group">
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password">
-    </div>
-    <div class="form-group">
-      <label for="companyid">Company ID:</label>
-      <input type="number" id="companyid" name="companyid" palceholder="Company">
-      </div>
-
-      <h4>Signup</h4>
-      <h4>Forgot Password</h4>
-    <button type="submit">Submit</button>
-  </form>
-</div>
-</div>
-<div class="navbottom">
-  <ul>
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, provident quis quasi molestias nobis animi quod autem. Id, quae facilis.</li>
-    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, maxime!</li>
-  </ul>
-</div>
-
-    
+<body" >
+  <div class="containerlogIn">
+  <img id="background-image" src="images/water.png">
+  <!-- <img src="images/waterbg.jpg" alt="waterbg"> -->
+  <!-- <form action= "/form.html" method="post"> -->
+   <form>
+    <H2 style="text-align: center;">LOGIN</H2>
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required value="myemail@hmail.com">
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required value="123">
+    <br>
+    <label for="company">Company Number:</label>
+    <input type="number" id="number" name="number" required value="21">
+    <br>
+    <input type="checkbox" id="remember" name="remember"><span><label for="remember">Remember me</label></span>    
+    <br>
+    <button type="submit" onclick="openform()">Open Form</button>
+    <!-- <button onclick="openForm()">Open Form</button> -->
+  <a href="/signup">Signup</a>
+  <a href="/forgot-password">Forgot password?</a>
+  <script>
+    function openForm() {
+      var myForm = window.open("form.html", "Form Window")
+      // , "height=100, width=100%");
+    }
+  </script>
+</form>
+        <div class="header">
+          message
+        </div>
+          <div class="notes">
+          notes
+        </div>
+      </div>     
 </body>
 </html>

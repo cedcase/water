@@ -1,226 +1,298 @@
-/* GLOBAL SETTINGS */
-* {
-  margin:0 ;
-  padding: 0;
-  text-decoration: none;
-  list-style: none;
-
-}
-/* **************************************************** */
-
-/* TOP NAVIGATION */
-
-body {
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  /* background-color:rgb(61, 79, 240); */
-  margin:0;
-}
-.logo {
-  float:left; 
-  padding:0 30px; 
-  margin-top: 25px;
-  color:white;
-}
-
-.nav {
-  display: inline-block;
-  position:relative;
-  margin-left: 0%;
-  margin-top: 0;
-  height: 80px; 
-  width:100%;
-  background-color:#42b0fa; 
-}
-
-.nav ul {
-  float:right;
-  margin-top: 40px;
-  padding: 0;
-}
-.nav li {
-  position: relative;
-  margin-right: 10x;
-  padding: 10px ;
-   display: inline-block;
-}
-.waterbgs {
-  position: absolute;
-  /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYFfmhK_uq4cJ9HPsfPXLz2WKzc4k5lv0LTA&usqp=CAU); */
-  margin-top:9px;
-  width: 1100px;
-  margin-left: 330px;
-  height: 100px;
-  /* background-position:center;
-  background-repeat: no-repeat; */
-  /* background-size: cover; */
-  border-radius: 20px;
-}
-
-.menuhead {
-font-weight: bold;
-font-size: large;
-margin:10px;
-background-color: #00bfff;
-color: rgb(95, 93, 93);
-}
-.sidenav {
-  /* width: fit-content; */
-}
-
-.sidenav ul{
-  position: absolute;
+#background-image {
+  /* width: 100%; */
   height: 100%;
-  background-color: #42b6fa;
-  margin:10px;
-  margin-left: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* object-fit: cover; */
+  z-index: -1;
 }
 
-.sidenav li {
-  /* margin: 10px; */
-  margin-left: 15PX;
-  margin-right: 10px;
-  padding:5px;
-  color: white;
-  cursor: pointer;
+.containerlogin {
+  border: 1px solid red;
 }
+.companyname {
+  position: relative;
+  color:blue;
+  /* right:100%; */
+  text-align: right;
+  padding:0;
+  ;
+  
+}
+    form {
+     position: relative;
+      top: 150px;
+      width: 300px;
+      margin-left: 200px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background-color: rgb(0, 0, 0, .5);
+      border-radius: 10px;
 
-li:hover {
-  background-color: rgb(11, 8, 243);
-  border-radius: 15px;
-  /* border: 2px solid whte; */
-  }
-
- .sidebar,li:hover {
-    background-color: white;
-    border-radius: 15px;
-    /* border: 2px solid whte; */
     }
-  
+    .header {
+      background-color: hotpink;
+    }
+    label {
+      /* display:grid; */
+      margin-bottom: 10px;
+    }
+    input[type="text"], input[type="email"], input[type="password"], input[type="number"] {
+      width: 100%;
+      padding: 12px 20px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+    }
+    button[type="submit"] {
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button[type="submit"]:hover {
+      background-color: #05ca0f;
+    }
+/* ----------------------------------------------------------------------------------------------------- */
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #222; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 0px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 
-.nav a {
-  padding: 0px;
-  margin: 0px;
-color: white;
-/* width:20px; */
-line-height: auto;
-display: inline-block;
-
-/* margin: ; */
-/* font-size: large; */
-}
-/* TOP NOVIGATION END ---------------------------------------------------------------------------------------*/
-/* nav yellow */
-.nav_yellow {
-  display: inline-block;
-  position: relative;
-  height: 11px;
-  background-color:rgba(24, 11, 211, 0.144);
-  width: 100%;
-  top: 95px;
-  /* border: 2px solid GREY; */
-}
-/* LOGIN FORM START */
-.login-form {
-  position: relative;
-  width: 300px;
-  background-color: #a0c4ec;
-  padding: 20px;
-  border-radius: 10px;
-  margin: auto;
-  /* margin-top:5%; */
-  height: 47x;
-}
-
- H2 {
-  margin-bottom: 50PX;
-  text-align: center;
-}
-h4 {
-  padding: 5px;
-  text-align: center;
-}
-
-.form-group {
-  margin-bottom: 15px;
 }
 
-.form-group label {
+/* The navigation menu links */
+.sidenav a {
+   position: relative;
+  padding: 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
   display: block;
-  font-size: 18px;
-  margin-bottom: 2px;
+  transition: 0.3s;
+  /* border: 1px solid rgb(56, 55, 55); */
+  top: 0px;
 }
 
-.form-group input {
-  width: 100%;
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  left: 5px;
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  /* position: absolute; */
   margin-top: 0px;
-  padding: 10px 00px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+  right: 0px;
+  font-size: 30px;
+  margin-left: 150px;
+  transform: rotate(360deg);
+  /* background-color: azure; */
 }
 
-button[type="submit"] {
-  background-color: #00bfff;
-  color: white;
-  padding: 12px ;
-  border-radius: 5px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: bold;
-  margin-top: 5px;
-  width:100%;
-  cursor: pointer;
+.sidenav .openbtn {
+  position: absolute;
+  /* margin-top: 5px; */
+  right: 15px;
+  font-size: 30px;
+  margin-left: 5x;
+  transform: rotate(45deg);
 }
-  /* ------------------------------------------------------------------------------------------------------- */
-  /* price plan */
-  .pricing-plan {
-    width: 350px;
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 1%;
-    text-align: center;
-    margin:auto;
-    margin-top: 5%;
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  height: 100vh;
+  transition: margin-left .5s;
+  padding: 0;
+  background-color: rgb(4, 84, 99);
+}
 
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 350px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/* ----------------------------------- */
+/* MENU BAR */
+.icon-bar {
+  position: absolute;
+  height: 89%;
+  top: 105px;
+  left: 250;
+  width: 37px; /* Set a specific width */
+  background-color: #222; /*#555;  Dark-grey background */
+  /* left: 10px; */
+}
+
+.icon-bar a {
+  display: block; /* Make the links appear below each other instead of side-by-side */
+  text-align:center; /* Center-align text */
+  padding: 30px 0 40px; /* 25px 15px 60px 6px; /* Add some padding */
+  margin-top: 00px;
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: white; /* White text color */
+  font-size:24Px; /* Increased font-size */
+  top: 0;
+  border-radius: 10px;
+}
+
+.icon-bar a:hover {
+  background-color: #190a9b; /* Add a hover color */
+  transform: rotate(10deg);
+}
+
+.active {
+  background-color: #04AA6D; /* Add an active/current color */
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+ /* CSS for Dropdown Menu */
+ .dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  left: 25px;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* Optional: Style the links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+/* -------------------------------------------------------------------------------- */
+/* conternerone */
+.containertop {
+  position: relative;
+  top: 50px;
+  width: 90%;
+  left: 100px;
+  height: 200px;
+  /* margin: 0 auto; */
+  background-color: rgb(207, 229, 240);
+}
+
+.containerbottom {
+  position: relative;
+  /* display:blinock; */
+  width: 95%;
+  left: 60px;
+  height: 80%;
+  top:20px;
+  background-color: white;
+}
+/* ---------------------------------------------------------------------------------- */
+/* data entry */
+    /* CSS styling for the form */
+   .containerbottom form { 
+      /* display: flex; */
+    /* width: 150px; */
+    margin: 5px auto;
+    padding: 10px;
+    border: 1px solid grey;
+
+   }
+   .container-de form {
+    position:absolute;
+    display: flex;
+    top:5px;
+    left: 10px;
+    right: 10px;
+    width: 97%;
+    /* margin: auto; */
+    border:1px solid lightgrey;
+   } 
+
+   .container-de form label {
+    padding: 0 5px 0 ;
+    display: block;
+    margin-bottom: 0px;
+    text-align: right;
   }
-  
-  .plan-name {
-    font-size: 24px;
-    margin-bottom: 10px;
+  .container-de form  input[type="text"], input[type="number"], input[type="date"] {
+   /* position: absolute; */
+    display: flex ;
+    padding: 0px;
+    margin: 0;
+    width: 150px;
+    border-radius:5px;
+    border:1px solid lightgrey;
+    text-align: right;
+    font-size: 15px;
+    /* box-sizing: border-box; */
   }
-  
-  .plan-price {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-  
-  .plan-features {
-      /* list-style: none;  */
-      margin: 0;
-      padding: 0;  
-  }
-  
-  .plan-features li {
-    margin-bottom: 10px;
-  }
-  
-  .plan-button {
-    background-color: #00bfff;
+  .container-de form  input[type="submit"] {
+    background-color: #4CAF50;
     color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: bold;
-    margin-top: 20px;
-  }
-  /* nav bottom */
+    padding: 12px 10px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    width: 10rem;
+    border-radius:5px;
 
-  .navbottom {
-    position: relative;
-    /* display: block; */
-    height: 100px;
-    background-color: rgb(158, 158, 158);
-    margin-top: 20%;
-    text-align:center;
+   }
+  input[type="submit"]:hover {
+    background-color: #45a049;
+      }
+      input[type="number"]:hover {
+        background-color: #dbeef7;
+      }
+
+  /* CSS styling for the table */
+ table {
+    position: absolute;
+    margin-top: 100px;
+    /* width: 90%; */
+    border-collapse: collapse;
+    left: 10px;
+    margin-right:10px;
   }
+ td {
+    border: 1px solid lightgrey;
+    padding: 8px;
+    text-align: right;
+
+  }
+  th {
+    padding: 10px;
+    background-color: #0496f8;
+    color:white;
+    border:1px solid lightblue;
+
+  }
+  tr:nth-child(even) {
+    background-color: #e6fafa;
+  }
+  tr:hover  {
+    background-color: #0afafa;
+  }
+  

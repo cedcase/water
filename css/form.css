@@ -1,0 +1,236 @@
+/* GLOBAL SETTINGS */
+* {
+  margin:0 ;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+
+}
+/* **************************************************** */
+
+/* TOP NAVIGATION */
+
+body {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  /* background-color:rgb(61, 79, 240); */
+  margin:0;
+}
+.logo {
+  position: absolute;
+  float:left; 
+  padding:0 30px; 
+  margin-top: 0;
+  color:white;
+  font-size: 30px;
+}
+
+.nav {
+  display: inline-block;
+  position:relative;
+  margin-left: 0%;
+  margin-top: 0;
+  height: 105px; 
+  width:100%;
+  background-color:#42b0fa; 
+}
+
+.nav ul {
+  float:right;
+  margin-top: 40px;
+  padding: 0;
+}
+.nav li {
+  position: relative;
+  margin-right: 10x;
+  padding: 10px ;
+   display: inline-block;
+}
+.waterbgs {
+  position: absolute;
+  /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYFfmhK_uq4cJ9HPsfPXLz2WKzc4k5lv0LTA&usqp=CAU); */
+  margin-top:9px;
+  width: 1100px;
+  margin-left: 330px;
+  height: 100px;
+  /* background-position:center;
+  background-repeat: no-repeat; */
+  /* background-size: cover; */
+  border-radius: 20px;
+}
+
+.menuhead {
+font-weight: bold;
+font-size: large;
+margin:10px;
+background-color: #00bfff;
+color: rgb(95, 93, 93);
+}
+
+
+.sidenav ul{
+  position: absolute;
+  height: 100%;
+  background-color: #42b0fa;
+  margin:10px;
+  margin-left: 0;
+}
+
+.sidenav li {
+  /* margin: 10px; */
+  margin-left: 15PX;
+  margin-right: 10px;
+  padding:15px;
+  color: white;
+  cursor: pointer;
+  /* border: 1px solid rgba(202, 189, 247, 0.836); */
+}
+
+li:hover {
+  background-color: rgb(11, 8, 243);
+  border-radius: 15px;
+  /* border: 2px solid whte; */
+  }
+
+ .sidebar,li:hover {
+    background-color:rgb(70, 157, 255);
+    border-radius: 15px;
+  
+        }
+  
+.login-form:hover {
+  display:none;
+}
+
+.nav a {
+  padding: 0px;
+  margin: 0px;
+color: white;
+/* width:20px; */
+line-height: auto;
+display: inline-block;
+
+/* margin: ; */
+/* font-size: large; */
+}
+/* TOP NOVIGATION END ---------------------------------------------------------------------------------------*/
+/* nav yellow */
+.nav_yellow {
+  display: inline-block;
+  position: relative;
+  height: 11px;
+  background-color:rgba(24, 11, 211, 0.144);
+  width: 100%;
+  top: 95px;
+  /* border: 2px solid GREY; */
+}
+/* LOGIN FORM START */
+.login-form {
+  position: relative;
+  width: 300px;
+  background-color: #a0c4ec;
+  padding: 20px;
+  border-radius: 10px;
+  margin: auto;
+  /* margin-top:5%; */
+  height: 47x;
+}
+
+.main, h2 {
+  position: abso;
+  /* margin-bottom: 50PX; */
+  /* text-align: center; */
+  top: 20px;
+  padding: 0;
+  left: 50px;
+  /* border:1px solid red; */
+
+}
+h4 {
+  padding: 5px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+
+.form-group input {
+  width: 100%;
+  margin-top: 0px;
+  padding: 10px 00px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  background-color: #00bfff;
+  color: white;
+  padding: 12px ;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin-top: 5px;
+  width:100%;
+  cursor: pointer;
+}
+  /* ------------------------------------------------------------------------------------------------------- */
+  /* price plan */
+  .pricing-plan {
+    width: 350px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 1%;
+    text-align: center;
+    margin:auto;
+    margin-top: 5%;
+
+  }
+  
+  .plan-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .plan-price {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .plan-features {
+      /* list-style: none;  */
+      margin: 0;
+      padding: 0;  
+  }
+  
+  .plan-features li {
+    margin-bottom: 10px;
+  }
+  
+  .plan-button {
+    background-color: #00bfff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  /* nav bottom */
+
+  .navbottom {
+    position: relative;
+    /* display: block; */
+    height: 100px;
+    background-color: rgb(158, 158, 158);
+    margin-top: 20%;
+    text-align:center;
+  }

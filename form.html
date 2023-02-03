@@ -1,0 +1,236 @@
+<!-- /*
+| -----------------------------------------------------
+| PRODUCT NAME: 	Modern POS - Point of Sale with Stock Management System
+| AUTHOR:     ITSOLUTION24.COM
+| EMAIL:      cedcase@yahoo.com
+| COPYRIGHT:    RESERVED BY ITSOLUTION24.COM
+| WEBSITE:      http://itsolution24.com
+| -----------------------------------------------------
+*/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="css/favicon2.ico">
+  <script src="js/js.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <title>WMS</title>
+</head>
+<body>
+ 
+  <!-- Side Nav Bar  &#9776;-->
+  <div id="mySidenav" class="sidenav" class="dropdown">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">◄</a>
+    <a href="#">READINGS...</a>
+    <a href="#">CUSTOMERS...</a>
+    <a href="#">SETTINGS...</a>
+    <a href="#">HISTORY</a>
+  </div>
+  <div class="dropdown-content">
+    <a href="#">Option 1</a>
+    <a href="#">Option 2</a>
+    <a href="#">Option 3</a>
+  </div>
+
+  <!-- <span class="openbtn" onclick="openNav()">&#9776;</span> -->
+
+  <div id="main">
+    <div class="nav">
+            <h2 class="logo">WATER MANAGEMENT SYSTEM</i></h2> 
+            <h4 class="companyname" >KENSINGTON COURT PSP# 465</h4>   
+        <ul>
+          <li><a href="home.html"><i class="fas fa-house"></i>Home</a></li>
+            <li><a href="#"><i class="fas fa-link"></i>About</a></li>
+            <li><a href="prices.html">Prices</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+        
+    </div>
+
+    <div class="icon-bar">
+      <a class="active" href="#"><i class="fa fa-home" onclick="openNav()"></i></a>
+      <a href="#"><i class="fa fa-search"></i></a>
+      <a href="#"><i class="fa fa-envelope"></i></a>
+      <a href="#"><i class="fa fa-globe"></i></a>
+      <a href="#"><i class="fa fa-trash"></i></a>
+      <a href="#"><i class="fa fa-house"></i></a>
+      <a href="#"><i class="fa fa-link"></i></a>
+    </div>
+  <!-- <div class="containertop">
+    top
+  </div> -->
+  <div class="containerbottom">
+   <div class="container-de">
+      <form>
+        <label for="batch">Batch:</label>
+        <input type="text" id="batch" name="batch">
+
+        <label for="apt">Apt:</label>
+        <input type="text" id="apt" name="apt">
+        
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date">
+
+        <label for="previous">Previous Reading:</label>
+        <input type="number" id="previous" name="previous">
+
+        <label for="current">Current Reading:</label>
+        <input type="number" id="current" name="current">
+
+        <label for="consume">Consumption:</label>
+        <input type="number" id="consume" name="consume">
+
+        <input type="submit" value="Save"> 
+      </form>
+  </div>
+    <table class="data"  >
+      <tr>
+        <th>AptNo</th>
+        <th>Previous</th>
+        <th>Current</th>
+        <th>Usage</th>
+        <th>Con vto Ltr</th>
+        <th>Set</th>
+        <th>'000 Ltr</th>
+        <th>Water Rate</th>
+        <th>Sewage Rate</th>
+        <th>Water Charges</th>
+        <th>Sewage</th>
+        <th>Ser. Charge</th>
+        <th>PAM</th>
+        <th>X FACTOR</th>
+        <th>K FACTOR</th>
+        <th>TOTAL</th>
+        <th>CURENT BAL</th>
+      </tr>
+      <tr>
+        <td>101</td>
+        <td>586358</td>
+        <td>586543</td>
+        <td>185</td>
+        <td>841.75</td>
+        <td>832.5</td>
+        <td>1</td>
+        <td>237.72</td>
+        <td>274.58</td>
+        <td>237.72</td>
+        <td>274.58</td>
+        <td>316.694</td>
+        <td>-13.18</td>
+        <td>-40.79</td>
+        <td>155</td>
+        <td>930.024</td>
+        <td>148601.770</td>
+      </tr>
+      <tr>
+        <td>101a</td>
+        <td>316254</td>
+        <td>316380</td>
+        <td>126</td>
+        <td>573.3</td>
+        <td>567</td>
+        <td>1</td>
+        <td>237.72</td>
+        <td>274.58</td>
+        <td>237.72</td>
+        <td>274.58</td>
+        <td>316.694</td>
+        <td>-13.18</td>
+        <td>-40.79</td>
+        <td>155</td>
+        <td>930.024</td>
+        <td>1851.97</td>
+        
+        </tr>
+        <tr>
+          <td>102</td>
+          <td>806189</td>
+          <td>806970</td>
+          <td>781</td>
+          <td>3553.55</td>
+          <td>3514.5</td>
+          <td>4</td>
+          <td>237.72</td>
+          <td>274.58</td>
+          <td>950.88</td>
+          <td>1098.32</td>
+          <td>316.694</td>
+          <td>-37.62</td>
+          <td>-116.41</td>
+          <td>442.37</td>
+          <td>2654.234</td>
+          <td>2891.538</td>
+          
+        </tr>
+        <tr>
+          <td>102a</td>
+          <td>259339</td>
+          <td>260202</td>
+          <td>863</td>
+          <td>3926.65</td>
+          <td>3883.5</td>
+          <td>4</td>
+          <td>237.72</td>
+          <td>274.58</td>
+          <td>950.88</td>
+          <td>1098.32</td>
+          <td>316.694</td>
+          <td>-37.62</td>
+          <td>-116.41</td>
+          <td>442.37</td>
+          <td>2654.234</td>
+          <td>121937.570</td>
+        </tr>
+        <tr>
+          <td>102a</td>
+          <td>259339</td>
+          <td>260202</td>
+          <td>863</td>
+          <td>3926.65</td>
+          <td>3883.5</td>
+          <td>4</td>
+          <td>237.72</td>
+          <td>274.58</td>
+          <td>950.88</td>
+          <td>1098.32</td>
+          <td>316.694</td>
+          <td>-37.62</td>
+          <td>-116.41</td>
+          <td>442.37</td>
+          <td>2654.234</td>
+          <td>121937.57</td>
+        </tr>
+        <tr>
+          <td>103a</td>
+          <td>259339</td>
+          <td>260202</td>
+          <td>863</td>
+          <td>3926.65</td>
+          <td>3883.5</td>
+          <td>4</td>
+          <td>237.72</td>
+          <td>274.58</td>
+          <td>950.88</td>
+          <td>1098.32</td>
+          <td>316.694</td>
+          <td>-37.62</td>
+          <td>-116.41</td>
+          <td>442.37</td>
+          <td>2654.234</td>
+          <td>121937.57</td>
+        </tr>
+    </table>
+  </div>
+  <div class="containerside">
+    side
+  </div>
+  </div>
+</body>
+</html>

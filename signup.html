@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/signup.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/signup" method="post">
+
+        <label for="company_name">Company Name:</label>
+        <input type="text" id="company_name" name="company_name" required>
+        <br>
+        <label for="company_id">Company ID:</label>
+        <input type="text" id="company_id" name="company_id" required>
+        <br>
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+        <br>
+        <label for="Parish">Parish:</label>
+        <select id="parish" name="parish">
+            <option value="Kingston">Kingson</option>
+            <option value="Catherine">St. Catherine</option>
+            <option value="Mandeville">Mandeville</option>
+            </select>
+            <hr>
+        <div class="contactinfo"> 
+
+                <label for="trn">TRN#:</label>
+                <input type="text" id="trn" name="trn" required>
+                <br>
+                <label for="gct_no">GCT#:</label>
+                <input type="text" id="gct_no" name="gct_no" required>
+                <br>
+                <label for="phone">Phone#:</label>
+                <input type="text" id="phone" name="phone" required>
+                <br>
+
+        </div> 
+        <hr>
+        <br> 
+        <div class="priceplan">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <select id="parish" name="parish">
+                <option value="Basic">Kingson</option>
+                <option value="Catherine">St. Catherine</option>
+                <option value="Mandeville">Mandeville</option>
+                </select>
+                <br>
+                <div class="companyinfo-gov">
+                <label for="contact">Contact:</label>
+                <input type="text" id="contact" name="contact" required>
+                <br>
+
+                <label for="status">Status:</label>
+                <select id="status" name="status">
+                <option value="active">Active</option>
+                <option value="inactive">Inactive</option>
+                </select>
+        </div>
+        <br>
+
+        <label for="notes">Notes:</label>
+        <textarea id="notes" name="notes"></textarea>
+        <br>
+        <button type="submit">Signup</button>
+      </form>
+       
+</body>
+</html>
